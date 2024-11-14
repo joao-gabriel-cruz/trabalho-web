@@ -1,0 +1,124 @@
+/* Estilos básicos */
+.body {
+  font-family: Arial, sans-serif;
+  background-color: #3c3f41;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  background-color: #0c6b00;
+  text-align: center;
+  width: 100%;
+  height: 25rem;
+  background-image: url("https://www.minecraft-guides.com/wp-content/uploads/2022/02/NetherMods.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat ;
+}
+
+.header-nav {
+  width: 100%;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d0e0d;
+}
+
+.header-link-selected {
+  color: #ffdb00;
+  text-decoration: none;
+  border-bottom: 2px solid #ffdb00;
+  font-size: 1.2em;
+
+
+}
+
+.header-link {
+
+  color: #ffdb00;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.header-links{
+  width: 25%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav h1 {  
+  margin-left: 10px;
+}
+
+.title {
+  margin: 0;
+  color: #ffdb00;
+}
+
+.subtitle {
+  margin: 5px 0 0;
+}
+
+.main {
+  width: 100%;
+  text-align: center;
+}
+
+.main-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  margin: 20px 0;
+}
+
+.section-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.section-content {
+  margin: 0;
+}
+
+.features-list {
+  list-style-type: square;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.feature-item {
+  margin: 5px 0;
+}
+
+/* Botão */
+.button {
+  background-color: #ffdb00;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e6c200;
+}
+
+/* Conteúdo extra */
+.hidden {
+  display: none;
+}
+
+.extra-content {
+  margin-top: 20px;
+  color: #cfcfcf;
+}

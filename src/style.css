@@ -1,0 +1,45 @@
+/* Estilo da página de carregamento */
+.loading-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1b1b1b; /* Preto escuro */
+  color: #d3c09e; /* Bege suave para o texto */
+  overflow: hidden;
+}
+
+.loading-container {
+  text-align: center;
+}
+
+.loading-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(#4f6d39, #8b5e3b, #4f6d39); /* Gradiente verde e marrom */
+  mask: radial-gradient(circle at center, #000 0, #000 45%, transparent 50%);
+  animation: spin 1.5s linear infinite;
+}
+
+.loading-text {
+  font-size: 18px;
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 1s forwards;
+  color: #4f6d39; /* Verde escuro */
+}
+
+/* Animações */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
