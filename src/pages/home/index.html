@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Sobre Minecraft</title>
-		<link rel="stylesheet" href="/src/pages/home/style.css" />
-		<link rel="stylesheet" href="/src/global.css" />
-	</head>
 
-	<body class="body">
-		<header class="header">
-			<nav class="header-nav">
-				<h1 class="">Minecraft</h1>
-				<div class="header-links">
-					<a href="../home/index.html" class="header-link-selected">Home</a>
-					<a href="../mods/index.html" class="header-link">Mods</a>
-					<a href="/src/pages/servidores/index.html" class="header-link">Servidores</a>
-					<a href="/src/pages/mobs/index.html" class="header-link">Mobs</a>
-					<a href="/src/pages/about/index.html" class="header-link">Sobre</a>
-				</div>
-			</nav>
-		</header>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sobre Minecraft</title>
+	<link rel="stylesheet" href="/src/pages/home/style.css" />
+	<link rel="stylesheet" href="/src/global.css" />
+</head>
 
-		<main class="main">
-			<section class="section" id="sobre">
-				<h2 class="section-title">Sobre o Jogo</h2>
+<body class="body">
+	<header class="header">
+		<nav class="header-nav">
+			<h1 class="">Minecraft</h1>
+			<div class="header-links">
+				<a href="../home/index.html" class="header-link-selected">Home</a>
+				<a href="../mods/index.html" class="header-link">Mods</a>
+				<a href="/src/pages/servidores/index.html" class="header-link">Servidores</a>
+				<a href="/src/pages/mobs/index.html" class="header-link">Mobs</a>
+				<a href="/src/pages/about/index.html" class="header-link">Sobre</a>
+			</div>
+		</nav>
+	</header>
+	<main class="main">
+		<section class="lore-container" id="sobre">
+			<h2 class="section-title pixel-font">Sobre o Jogo</h2>
+			<div
+				class="display: flex; gap: 2rem; flex-direction: column; align-items: center; width: 65%; padding-top: 3rem; padding-bottom: 3rem;">
 				<p class="section-content">
 					Minecraft é um jogo de construção e aventura onde os jogadores podem explorar
 					mundos tridimensionais, minerar recursos, e criar estruturas incríveis.
 				</p>
-			</section>
-
-			<section class="section" id="features">
-				<h2 class="section-title">Características</h2>
-				<ul class="features-list">
-					<li class="feature-item">Mundo aberto e infinitamente gerado</li>
-					<li class="feature-item">Modo sobrevivência e criativo</li>
-					<li class="feature-item">Recursos para construção e exploração</li>
-				</ul>
-			</section>
-			<button class="button" id="exploreButton">Explorar Mais</button>
-			<div class="extra-content hidden" id="extraContent">
-				<p>Experimente mods, crie novos mundos, e jogue com seus amigos em servidores!</p>
+				<p class="section-content">
+					Mais que tal não ficar só no gostinho de saber o que é Minecraft e jogar um pouco?
+				</p>
 			</div>
-		</main>
+		</section>
+		<section class="lore-container">
+			<h3 class="pixel-font" style="font-size: 1.2rem; font-weight: 400;">
+				Imagine e Construa
+			</h3>
+			<div
+			class=""
+				style="font-size: larger; display: flex; gap: 2rem; flex-direction: column; align-items: center; width: 65%; padding-top: 3rem; padding-bottom: 3rem;">
+				<img src="https://images4.alphacoders.com/286/286264.jpg" alt="Imagem de uma torre no minecraft"
+					style="width: 100%;">
+				<p style="text-align: center;">
+					No Minecraft, você pode construir o que quiser. Desde casas simples até
+					complexas máquinas, o limite é a sua imaginação e criatividade.
+				</p>
+				<p class="pixel-font" style="text-align: center;">
+				  Mais porque fica só na gostinho?
+					<br/>
+					<br/>
+					Bora jogar um pouco?
+				</p>
+			</div>
+		</section>
+		<section>
+			<button onclick="setSrc()" class="button" id="jogar">Jogar</button>
+		</section>
+	</main>
+	<script src="script.js"></script>
+</body>
 
-		<script src="script.js"></script>
-	</body>
 </html>
