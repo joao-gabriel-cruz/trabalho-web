@@ -74,9 +74,20 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+
+.section-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column  ;
+  justify-content: center;
+  align-items: center;
 }
 
 .section {
+  width: 60%;
   margin: 20px 0;
 }
 
@@ -86,7 +97,9 @@
 }
 
 .section-content {
-  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .features-list {
@@ -121,4 +134,15 @@
 .extra-content {
   margin-top: 20px;
   color: #cfcfcf;
+}
+
+.container-images {
+  width: 300px;
+  height: 150px;
+}
+.container-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
